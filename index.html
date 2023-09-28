@@ -1,78 +1,540 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <title>Mehedi | Protfolio</title>
-</head>
-<body>
-    <header class="bg-primary text-center py-5">
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">Your Name</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/query.css" />
+
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg nav-bg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse py-2"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#certificate">Certificate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main data-scroll-container>
+      <div class="hero__section" id="home" data-scroll>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-7 col-sm-6">
+              <h1 class="display-1 mb-3">
+                Full Stack <span class="text-style">Developer</span>
+                and UI UX Designer
+              </h1>
+              <p class="display-6 mb-5">Hi,I am Mehedi Hasan</p>
+              <a href="#education" class="cta__btn">Learn more</a>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <div class="hero__img--box">
+                <img
+                  src="./images/hero.png"
+                  class="img-fluid"
+                  alt="hero image"
+                  data-scroll
+                  data-scroll-direction="horizontal"
+                  data-scroll-speed="-3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
-  <h1 class="display-4 font-weight-bold text-white mb-5">Web Developer</h1>
-</header>
 
-<main class="container my-5">
-  <section id="about">
-    <h2 class="text-center mb-5">About Me</h2>
-    <p class="text-center">Write a brief introduction about yourself and your skills.</p>
-  </section>
-
-  <section id="projects" class="mt-5">
-    <h2 class="text-center mb-5">Projects</h2>
-    <div class="d-flex justify-content-center">
-      <ul class="list-unstyled">
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact" class="mt-5">
-    <h2 class="text-center mb-5">Contact Me</h2>
-    <form class="d-flex flex-column align-items-center">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Name">
+      <div>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-5 col-sm-12 mx-auto">
+              <a
+                href="https://www.linkedin.com/in/md-mehedi-hasan-432631251/"
+                target="_blank"
+                class="icon__items display-1"
+              >
+                <i
+                  class="fa-brands fa-linkedin icon"
+                  data-scroll
+                  data-scroll-direction="vertical"
+                  data-scroll-speed="1"
+                ></i>
+              </a>
+              <a
+                href="https://dribbble.com/pymehedi"
+                target="_blank"
+                class="icon__items display-1"
+              >
+                <i
+                  class="fa-brands fa-square-dribbble icon"
+                  data-scroll
+                  data-scroll-direction="horizontal"
+                  data-scroll-speed="1"
+                ></i>
+              </a>
+              <a
+                href="https://github.com/mehedi-sohag"
+                target="_blank"
+                class="icon__items display-1"
+              >
+                <i
+                  class="fa-brands fa-square-github icon"
+                  data-scroll
+                  data-scroll-direction="vertical"
+                  data-scroll-speed="-1"
+                ></i>
+              </a>
+              <a
+                href="https://www.behance.net/mehedihasan692"
+                target="_blank"
+                class="icon__items display-1"
+              >
+                <i
+                  class="fa-brands fa-square-behance icon"
+                  data-scroll
+                  data-scroll-direction="horizontal"
+                  data-scroll-speed="1"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <input type="email" class="form-control" placeholder="Email">
-      </div>
-      <div class="form-group">
-        <textarea class="form-control" placeholder="Message"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </section>
-</main>
 
-<footer class="bg-light py-3">
-  <p class="text-center">Copyright © 2023 Your Name</p>
+      <div class="about__section" id="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-sm-12 col-lg-7 mb-sm-4">
+              <h1 class="h2 mb-2">About me</h1>
+              <p class="lead">
+                Hello, my name is Mehedi Hasan and I am a professional UI/UX
+                designer and web developer with around 1 year of experience. I
+                specialize in creating visually appealing and user-centered
+                designs for web and mobile applications. I have a deep
+                understanding of the latest design trends and use the most
+                advanced tools such as Figma to deliver high-quality wireframes,
+                mockups and interactive prototypes.In addition to my design
+                skills, I am also a proficient web developer and have experience
+                in building responsive websites and web applications using HTML,
+                CSS, JavaScript, and various web development frameworks.
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-lg-5">
+              <div class="flex--end">
+                <img
+                  src="./images/mehedi.png"
+                  alt="user photo"
+                  class="img-fluid rounded"
+                  data-scroll
+                  data-scroll-direction="horizontal"
+                  data-scroll-speed="2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    
-</body>
+      <div
+        class="education-skill__section"
+        id="education"
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-direction="horizontal"
+      >
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-10 col-sm-12 mx-auto mb-5">
+              <h2 class="h2 mb-5">Education</h2>
+              <p class="lead">
+                Bachelor of Science Computer Science and Engineering
+              </p>
+              <p class="lead">Prime University,Dhaka,Bangladesh</p>
+              <p class="lead">
+                Relevant Courses:
+                <span class="highlight"
+                  >Data Structures, Algorithms, Object-Oriented Programming,
+                  Database Management, Software Engineering</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-10 col-sm-12 mx-auto">
+              <h2 class="h2 mb-5">Skills</h2>
+              <p class="lead">
+                Programming Languages:
+                <span class="highlight">Python, Java, C++, C, JavaScript</span>
+              </p>
+              <p class="lead">
+                Database: <span class="highlight">SQL,MySQL,MongoDB</span>
+              </p>
+              <p class="lead">
+                Web Development:
+                <span class="highlight"
+                  >HTML, CSS, SASS, JavaScript, Node js, Express js, Bootstrap,
+                  Tailwind, Semantic UI, React js</span
+                >
+              </p>
+              <p class="lead">
+                Version Control: <span class="highlight">Git</span>
+              </p>
+              <p class="lead">
+                Problem Solving:
+                <span class="highlight"
+                  >Logical thinking, Algorithm design</span
+                >
+              </p>
+              <p class="lead">
+                Software Tools:
+                <span class="highlight">Visual Studio Code, Eclipse</span>
+              </p>
+              <p class="lead">
+                Collaboration:
+                <span class="highlight"
+                  >Strong teamwork and communication skills</span
+                >
+              </p>
+
+              <p class="lead">
+                Learning:
+                <span class="highlight">Quick and enthusiastic learner</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="certificate__section"
+        id="certificate"
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-direction="horizontal"
+      >
+        <div class="container">
+          <div class="row text-center">
+            <h2 class="h2 mb-5">Certificate</h2>
+            <div class="col-md-4 col-sm-12 mb-sm-4">
+              <a
+                href="https://www.udemy.com/certificate/UC-b5f4ddb6-e33d-4176-80fa-e9e3224a5224/"
+                target="_blank"
+                class="certificate-link"
+              >
+                <img
+                  src="./images/certificate-1.png"
+                  class="img-fluid"
+                  alt="certificate-1"
+                />
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-sm-4">
+              <a
+                href="https://www.udemy.com/certificate/UC-d262f964-373b-4ea3-9e65-34b0e8fc5c32/"
+                target="_blank"
+                class="certificate-link"
+              >
+                <img
+                  src="./images/certificate-2.png"
+                  class="img-fluid"
+                  alt="certificate-2"
+                />
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-sm-4">
+              <a
+                href="https://www.udemy.com/certificate/UC-d89cea4c-20c7-4115-9a5c-6f6d6a670911/
+            "
+                target="_blank"
+                class="certificate-link"
+              >
+                <img
+                  src="./images/certificate-3.png"
+                  class="img-fluid"
+                  alt="certificate-3"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project__section" id="projects">
+        <div class="container">
+          <div class="row text-center">
+            <h2 class="h2 mb-5">Projects</h2>
+
+            <div class="col-md-4 col-sm-12 mb-sm-5">
+              <div class="certificate-container">
+                <img
+                  src="./images/project-1.png"
+                  class="img-fluid"
+                  alt="project-1"
+                />
+                <div class="certificate-info">
+                  <ul class="icon-items ps-0">
+                    <li class="icon-item">
+                      <a
+                        href="https://github.com/mehedi-sohag/innovate-web-design"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-brands fa-square-github"></i
+                      ></a>
+                    </li>
+                    <li class="icon-item">
+                      <a
+                        href="https://mehedi-sohag.github.io/innovate-web-design/"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-solid fa-globe"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-sm-5">
+              <div class="certificate-container">
+                <img
+                  src="./images/project-2.png"
+                  class="img-fluid"
+                  alt="project-2"
+                />
+                <div class="certificate-info">
+                  <ul class="icon-items ps-0">
+                    <li class="icon-item">
+                      <a
+                        href="https://github.com/mehedi-sohag/finsweet-web-design"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-brands fa-square-github"></i
+                      ></a>
+                    </li>
+                    <li class="icon-item">
+                      <a
+                        href="https://mehedi-sohag.github.io/finsweet-web-design/"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-solid fa-globe"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-sm-5">
+              <div class="certificate-container">
+                <img
+                  src="./images/project-3.png"
+                  class="img-fluid"
+                  alt="project-3"
+                />
+                <div class="certificate-info">
+                  <ul class="icon-items ps-0">
+                    <li class="icon-item">
+                      <a
+                        href="https://www.behance.net/gallery/162894419/Grayscale-Landing-Page"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-brands fa-square-behance"></i>
+                      </a>
+                    </li>
+                    <li class="icon-item">
+                      <a
+                        href="https://dribbble.com/pymehedi"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-brands fa-square-dribbble"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-12 mb-sm-5">
+              <div class="certificate-container">
+                <img
+                  src="./images/project-5.png"
+                  class="img-fluid"
+                  alt="project-1"
+                />
+                <div class="certificate-info">
+                  <ul class="icon-items ps-0">
+                    <li class="icon-item">
+                      <a
+                        href="https://github.com/mehedi-sohag/agenc-web-design"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-brands fa-square-github"></i
+                      ></a>
+                    </li>
+                    <li class="icon-item">
+                      <a
+                        href="https://mehedi-sohag.github.io/agenc-web-design/"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-solid fa-globe"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-sm-5">
+              <div class="certificate-container">
+                <img
+                  src="./images/project-4.png"
+                  class="img-fluid"
+                  alt="project-2"
+                />
+                <div class="certificate-info">
+                  <ul class="icon-items ps-0">
+                    <li class="icon-item">
+                      <a
+                        href="https://github.com/mehedi-sohag/Omnifood"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-brands fa-square-github"></i
+                      ></a>
+                    </li>
+                    <li class="icon-item">
+                      <a
+                        href="https://mehedi-sohag.github.io/Omnifood/"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-solid fa-globe"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-sm-5">
+              <div class="certificate-container">
+                <img
+                  src="./images/project-7.png"
+                  class="img-fluid"
+                  alt="project-3"
+                />
+                <div class="certificate-info">
+                  <ul class="icon-items ps-0">
+                    <li class="icon-item">
+                      <a
+                        href="https://github.com/mehedi-sohag/papaya"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-brands fa-square-github"></i
+                      ></a>
+                    </li>
+                    <li class="icon-item">
+                      <a
+                        href="https://mehedi-sohag.github.io/papaya/"
+                        target="_blank"
+                        class="icon-link"
+                      >
+                        <i class="fa-solid fa-globe"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__section" id="contact">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-5 mx-auto">
+              <h2 class="h2 mb-5">Contact</h2>
+              <p class="lead flex--center">
+                <i class="fa-brands fa-square-whatsapp contact--icon"></i>
+                <span>+8801765246791</span>
+              </p>
+              <p class="lead flex--center">
+                <i class="fa-solid fa-envelope contact--icon"></i>
+                <span>pymehedi@gmail.com</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer__section" data-scroll>
+        <div class="container text-center">
+          <p class="copy">
+            Copyright © <span class="year">2023</span> by Mehedi. All rights
+            reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  </body>
 </html>
-

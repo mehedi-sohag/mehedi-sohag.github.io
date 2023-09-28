@@ -1,0 +1,66 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about__section {
+    padding-bottom: 96px;
+    clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
+  }
+  .education-skill__section {
+    padding-top: 0;
+  }
+  .about__section {
+    padding: 64px 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .flex--end {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .about__section {
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 90%);
+    padding-bottom: 0;
+    padding-top: 64px;
+  }
+  .education-skill__section {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero__img--box {
+    animation: none;
+  }
+  .flex--end {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .about__section {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    padding-bottom: 0;
+    padding-top: 48px;
+  }
+  .education-skill__section {
+    padding-top: 0;
+  }
+  .mb-sm-4 {
+    margin-bottom: 16px;
+  }
+  .mb-sm-5 {
+    margin-bottom: 32px;
+  }
+
+  .project__section {
+    padding-bottom: 48px;
+  }
+  .contact__section {
+    padding: 0 0 48px 0;
+  }
+  .education-skill__section {
+    padding: 64px 0;
+  }
+  .certificate__section {
+    padding-bottom: 64px;
+  }
+}

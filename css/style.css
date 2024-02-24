@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   /* background: #f7f7f7; */
 }
 /* hero section */
@@ -32,7 +32,7 @@ body {
   background-color: #f7f7f7;
 }
 .sticky .nav-bg {
-  border-bottom: 1px solid #07e0c4;
+  /* border-bottom: 1px solid #07e0c4; */
 }
 .cta__btn:hover,
 .cta__btn:active {
@@ -73,9 +73,7 @@ body {
 .certificate-link {
   transition: all 0.3s;
 }
-.certificate-link:hover {
-  filter: blur(1px);
-}
+
 .certificate-container {
   position: relative;
   overflow: hidden;
@@ -166,6 +164,7 @@ body {
 
 .contact--icon {
   font-size: 24px;
+  margin-right: 8px;
 }
 .copy {
   color: rgb(0, 0, 0);
@@ -227,4 +226,16 @@ body {
   );
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   z-index: -1;
+}
+
+.navbar-nav {
+  gap: 8px;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
